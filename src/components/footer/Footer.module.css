@@ -1,0 +1,139 @@
+:root{
+  --bg:#4b4949;
+  --muted:#bfbfbf;
+  --accent:#c94a4a;
+}
+
+.footer {
+  background: var(--bg);
+  color: var(--muted);
+  padding: 48px 20px 20px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.footer-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.left { flex: 1.2 }
+.middle { flex: 0.9 }
+.right { flex: 0.9 }
+
+.brand { 
+  display:flex; 
+  align-items:center; 
+  gap:12px; 
+  margin-bottom:12px;
+}
+
+.logoImg { 
+  width:44px; 
+  height:44px; 
+  object-fit:contain; 
+  margin-right:8px;
+}
+
+.title { 
+  color:#fff; 
+  font-family: 'Playfair Display', serif; 
+  margin:0; 
+  font-size:20px; 
+  display:flex; 
+  align-items:center;
+}
+
+.desc { 
+  color: rgba(255,255,255,0.65); 
+  line-height:1.7; 
+  max-width:320px; 
+  margin:8px 0 18px;
+}
+
+.socials { 
+  display:flex; 
+  gap:10px;
+}
+
+.socialBtn{ 
+  width:36px; 
+  height:36px; 
+  border-radius:50%; 
+  border:0; 
+  background:var(--accent); 
+  color:#fff; display:inline-flex; 
+  align-items:center; 
+  justify-content:center; 
+  cursor:pointer; 
+  font-weight:600;
+}
+
+.navColumns { 
+  display:flex; 
+  gap:80px;
+}
+
+.col h4 { 
+  color:#fff; 
+  margin:0 0 14px; 
+  font-size:15px;
+}
+
+.col ul { 
+  list-style:none; 
+  padding:0; 
+  margin:0; 
+  color:var(--muted);
+}
+
+.col li { 
+  margin-bottom:10px; 
+  font-size:14px;
+}
+
+.col li a { 
+  color: var(--muted); 
+  text-decoration:none;
+}
+
+.col li a:hover { 
+  color:#fff;
+}
+
+.instagramGrid { 
+  display:grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap:12px;
+}
+
+.instagramGrid img { 
+  width:100%; 
+  height:96px; 
+  object-fit:cover; 
+  border-radius:12px; 
+  display:block;
+}
+
+.divider { 
+  height:1px; 
+  width:100%; 
+  max-width:1100px; 
+  margin:28px auto 18px; 
+  background:rgba(0,0,0,0.25);
+}
+
+.bottom { 
+  text-align:center; 
+  color:rgba(255,255,255,0.6); 
+  padding-bottom:8px; 
+  font-size:13px;
+}
+
+@media (max-width:900px){
+  .footer-container{ flex-direction:column; align-items:flex-start }
+  .navColumns{ flex-direction:row; gap:20px }
+  .instagramGrid img{ height:80px }
+}
