@@ -1,12 +1,12 @@
 import React from 'react'
 import {Routes, Route} from 'react-router-dom';
-import Home from './pages/home/Home';
-import Menu from './pages/menu/Menu';
-import Book from './pages/book/Book';
-import Blog from './pages/blogs/Blog';
-import BlogDetails from './pages/blogs/BlogDetails';
-import About from './pages/about/About';
-import Contact from './pages/contact/Contact';
+import Home from './pages/HomePage/HomePage';
+import Menu from './pages/MenuPage/MenuPage';
+import Book from './pages/BookPage/BookPage';
+import Blog from './pages/BlogsPage/BlogPage';
+import BlogDetails from './pages/BlogsPage/BlogDetailsPage';
+import About from './pages/AboutPage/AboutPage';
+import Contact from './pages/ContactPage/ContactPage';
 
 export default function App() {
   return (

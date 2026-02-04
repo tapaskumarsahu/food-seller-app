@@ -1,40 +1,54 @@
-import React from "react";
+// import React, { useEffect, useState } from "react";
 import styles from "./ContactNav.module.css";
-import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
-import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
-import { Link } from "react-router-dom";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa";
+import { FiPhone } from "react-icons/fi";
+import { LuMail } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 export default function ContactNav() {
+  // const [scrolled, setScrolled] = useState(false)
+
+  // useEffect(() => {
+  //   const onScroll = () => setScrolled(window.scrollY > 20)
+  //   onScroll()
+  //   window.addEventListener('scroll', onScroll)
+  //   return () => window.removeEventListener('scroll', onScroll)
+  // }, [])
+
   return (
     <div className={styles.nav}>
-      <ul className={styles.contact}>
-        <li className={styles.item}>
-            <LocalPhoneOutlinedIcon /> <span>(+91) 98989890090</span>
-        </li>
-        <li className={styles.item}>
-          <EmailOutlinedIcon /> <span>yummy@fsdfooder.com</span>
-        </li>
-      </ul>
+      <div className={styles.left}>
+        <div className={styles.contactInfo}>
+          <div className={styles.contactItem}>
+            <FiPhone className={styles.icon} />
+            <span className={styles.contactText}>(414) 857 - 0107</span>
+          </div>
+          <div className={styles.contactItem}>
+            <LuMail className={styles.icon} />
+            <span className={styles.contactText}>happytummy@restaurant.com</span>
+          </div>
+        </div>
+      </div>
+
       <ul className={styles.social}>
-        <li className={styles.item}>
-          <FaXTwitter />
+        <li>
+          <Link className={styles.socialBtn} to="https://twitter.com" target="_blank" rel="noreferrer" aria-label="twitter"><FaXTwitter /></Link>
         </li>
-        <li className={styles.item}>
-          <FaFacebook />
+        <li>
+          <Link className={styles.socialBtn} to="https://facebook.com" target="_blank" rel="noreferrer" aria-label="facebook"><FaFacebookF /></Link>
         </li>
-        <li className={styles.item}>
-          <FaInstagram />
+        <li>
+          <Link className={styles.socialBtn} to="https://instagram.com" target="_blank" rel="noreferrer" aria-label="instagram"><FaInstagram /></Link>
         </li>
-        <li className={styles.item}>
-          <FaLinkedinIn />
+        <li>
+          <Link className={styles.socialBtn} to="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="linkedin"><FaLinkedinIn /></Link>
         </li>
-        <li className={styles.item}>
-          <FaPinterest />
+        <li>
+          <Link className={styles.socialBtn} to="https://pinterest.com" target="_blank" rel="noreferrer" aria-label="pinterest"><FaPinterest /></Link>
         </li>
       </ul>
     </div>

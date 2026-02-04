@@ -1,0 +1,91 @@
+.delivery {
+  padding: 90px 10%;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.images div {
+  border-radius: 18px;
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+}
+
+.images div:first-child {
+  grid-row: span 2;
+  height: 500px;
+}
+
+.content h2 {
+  font-size: 55px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  color: #2C2F24;
+}
+
+.content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #2C2F24;
+  margin-bottom: 36px;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+  font-size: 18px;
+  color: #2C2F24;
+}
+
+.content li span {
+  display: inline-block;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #b23b3b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.glyph {
+  color: #fff;
+  font-size: 24px;
+  line-height: 0;
+  display: block;
+  transform: none;
+}
+
+.glyph svg {
+  width: 39px;
+  height: 39px;
+  display: block;
+}
+
+.content li {
+  min-height: 52px;
+}
+
+.content li span:last-child {
+  line-height: 1.1;
+}

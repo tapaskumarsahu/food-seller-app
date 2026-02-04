@@ -1,25 +1,95 @@
 .nav{
-    background-color: var(--primary-backgroundcolor);
+    background-color: #474747;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    align-items: center;
+    padding: 10px 4rem;
     color: #F9F9F7;
     text-align: center;
+    height: 45px;
 }
-.contact{
+/* .contact{
     display: flex;
     list-style: none;
     gap: 2rem;
-}
+} */
 .social{
     display: flex;
     list-style: none;
     gap: 1rem;
+    align-items: center;
 }
 .item{
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+.socialBtn {
+     width: 27.17px;
+     height: 27.17px;
+     border-radius:50%;
+     border:none;
+     background:#F9F9F71F;
+     color:#ffffff;
+     display:inline-flex;
+     align-items:center;
+     justify-content:center;
+     cursor:pointer;
+     font-weight:700;
+     text-align: center;
+     text-decoration: none;
+}
+.socialBtn:hover {
+    background-color: #DBDFD0;
+    transform: translateY(-1px);
+    color: black;
+}
+
+.contactLogo {
+    width:44px;
+    height:auto;
+    margin-right:12px;
+}
+
+.logoLink {
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    text-decoration:none;
+    color:inherit;
+}
+
+.contactText {
+    font-weight:400;
+    color:#f7f7f5;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Hide contact bar once user scrolls to free space for sticky header */
+/* .hidden {
+    display: none;
+} */
+
+@media (max-width: 768px) {
+    .nav {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
