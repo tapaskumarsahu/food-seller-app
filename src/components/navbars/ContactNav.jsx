@@ -1,23 +1,14 @@
-// import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./ContactNav.module.css";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaPinterest } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { LuMail } from "react-icons/lu";
 import { Link } from "react-router-dom";
 
 export default function ContactNav() {
-  // const [scrolled, setScrolled] = useState(false)
-
-  // useEffect(() => {
-  //   const onScroll = () => setScrolled(window.scrollY > 20)
-  //   onScroll()
-  //   window.addEventListener('scroll', onScroll)
-  //   return () => window.removeEventListener('scroll', onScroll)
-  // }, [])
 
   return (
     <div className={styles.nav}>
@@ -29,7 +20,7 @@ export default function ContactNav() {
           </div>
           <div className={styles.contactItem}>
             <LuMail className={styles.icon} />
-            <span className={styles.contactText}>happytummy@restaurant.com</span>
+            <span className={styles.contactText}>yummy@bistrobliss</span>
           </div>
         </div>
       </div>
@@ -46,9 +37,6 @@ export default function ContactNav() {
         </li>
         <li>
           <Link className={styles.socialBtn} to="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="linkedin"><FaLinkedinIn /></Link>
-        </li>
-        <li>
-          <Link className={styles.socialBtn} to="https://pinterest.com" target="_blank" rel="noreferrer" aria-label="pinterest"><FaPinterest /></Link>
         </li>
       </ul>
     </div>

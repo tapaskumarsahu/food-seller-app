@@ -10,7 +10,6 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaPinterest } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -32,7 +31,6 @@ export default function Footer() {
             <Link className={styles.socialBtn} to="https://facebook.com" target="_blank" rel="noreferrer" aria-label="facebook"><FaFacebookF /></Link>
             <Link className={styles.socialBtn} to="https://instagram.com" target="_blank" rel="noreferrer" aria-label="instagram"><FaInstagram /></Link>
             <Link className={styles.socialBtn} to="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="linkedin"><FaLinkedinIn /></Link>
-            <Link className={styles.socialBtn} to="https://pinterest.com" target="_blank" rel="noreferrer" aria-label="pinterest"><FaPinterest /></Link>
           </div>
         </div>
 
@@ -80,7 +78,7 @@ export default function Footer() {
       <div className={styles.divider} />
 
       <div className={styles.bottom}>
-        <p>Copyright © 2023 Hashtag Developer. All Rights Reserved</p>
+        <p>Copyright © 2026 Hashtag Developer. All Rights Reserved</p>
       </div>
     </footer>
   )

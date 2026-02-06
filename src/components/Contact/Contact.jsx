@@ -4,7 +4,6 @@ import styles from './Contact.module.css'
 export default function Contact() {
   return (
     <div className={styles.contactPage}>
-      {/* Header */}
       <div className={styles.header}>
         <h1>Contact Us</h1>
         <p>
@@ -12,7 +11,6 @@ export default function Contact() {
         </p>
       </div>
 
-      {/* Contact Form */}
       <div className={styles.formCard}>
         <form>
           <div className={styles.row}>
@@ -41,7 +39,6 @@ export default function Contact() {
         </form>
       </div>
 
-      {/* Footer Info */}
       <div className={styles.infoSection}>
         <div>
           <h4>Call Us:</h4>

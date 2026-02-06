@@ -15,7 +15,6 @@
 
 }
 
-/* Logo */
 .logo {
   display: flex;
   align-items: center;
@@ -53,7 +52,6 @@
   display: block;
 }
 
-/* Hamburger toggle (hidden on desktop) */
 .menuToggle {
   display: none;
   background: transparent;
@@ -68,6 +66,7 @@
   display: block;
   position: relative;
 }
+
 .hamburger::before,
 .hamburger::after {
   content: '';
@@ -77,10 +76,15 @@
   position: absolute;
   left: 0;
 }
-.hamburger::before { top: -8px; }
-.hamburger::after { top: 8px; }
 
-/* Nav Links */
+.hamburger::before { 
+  top: -8px;
+}
+
+.hamburger::after { 
+  top: 8px;
+}
+
 .navLinks {
   list-style: none;
   display: flex;
@@ -102,7 +106,7 @@
 
 .navItem:hover,
 .navItem:focus-visible {
-  background-color: rgba(34,139,34,0.06); /* subtle greenish hover */
+  background-color: rgba(34,139,34,0.06);
   color: #1b3b1b;
   transform: translateY(-1px);
 }
@@ -112,17 +116,15 @@
 }
 
 .active {
-  background-color: #e6efd9; /* active pill */
+  background-color: #e6efd9;
   color: #1b3b1b;
   box-shadow: 0 4px 10px rgba(23,54,23,0.06);
 }
 
-/* Ensure anchors inside list items have no default underline */
 .navLinks a {
   text-decoration: none;
 }
 
-/* Button */
 .bookBtn {
   width: 148px;
   height: 48px;
@@ -141,7 +143,6 @@
   color: #ffffff;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .navbar {
     padding: 12px 16px;
@@ -181,7 +182,6 @@
   }
 }
 
-/* Scrolled state: sticky header and smaller logo */
 .header.scrolled {
   position: fixed;
   top: 0;
@@ -191,19 +191,13 @@
   background-color: #ffffff;
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
   padding: 8px 16px;
-  z-index: 60;
+  z-index: 100;
+  background-color: rgba(255,255,255,0.72);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 
-/* .header.scrolled .navbar {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0;
+@supports not ((-webkit-backdrop-filter: blur(0)) or (backdrop-filter: blur(0))) {
+  .header.scrolled { background-color: rgba(255,255,255,0.94); }
 }
-
-.header.scrolled .logoImg {
-  width: 48px;
-}
-
-.header.scrolled .logoText {
-  font-size: 20px;
-} */

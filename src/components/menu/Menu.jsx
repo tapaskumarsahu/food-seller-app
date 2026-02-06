@@ -8,10 +8,7 @@ import img5 from '../../assets/menu/image29.png'
 import img6 from '../../assets/menu/image30.png'
 import img7 from '../../assets/menu/image31.png'
 import img8 from '../../assets/menu/image32.png'
-import { SiFoodpanda } from "react-icons/si";
-import { SiDeliveroo } from "react-icons/si";
-import { SiInstacart } from "react-icons/si";
-import { SiDoordash } from "react-icons/si";
+
 
 const menuData = [
   { id: 1, title: "Fried Eggs", price: 9.99, category: "Breakfast", img: img1 },
@@ -35,13 +32,11 @@ export default function Menu() {
       : menuData.filter(item => item.category === active);
   return (
     <div className={styles.menuPage}>
-      {/* Header */}
       <div className={styles.header}>
         <h1>Our Menu</h1>
         <p>We consider all the drivers of change gives you the components <br /> need to change to create a truly happens.</p>
       </div>
 
-      {/* Filter Buttons */}
       <div className={styles.filters}>
         {categories.map(cat => (
           <button
@@ -54,7 +49,6 @@ export default function Menu() {
         ))}
       </div>
 
-      {/* Menu Grid */}
       <div className={styles.grid}>
         {filteredMenu.map(item => (
           <div className={styles.card} key={item.id}>
@@ -65,30 +59,9 @@ export default function Menu() {
               <div className={styles.price}>${item.price.toFixed(2)}</div>
               <h4 className={styles.title}>{item.title}</h4>
               <p className={styles.desc}>Made with eggs, lettuce, salt, oil and other ingredients.</p>
-              {/* <div className={styles.cta}>Explore Menu</div> */}
             </div>
           </div>
         ))}
-      </div>
-
-      {/* Order Apps Section */}
-      <div className={styles.appsSection}>
-        <div>
-          <h2>You can order <br />through apps</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit enim bibendum sed et aliquet aliquet risus tempor semper.</p>
-        </div>
-
-        <div className={styles.apps}>
-          <span>UberEats</span>
-          <span style={{ color: '#F63440', fontWeight: 700 }}>GRUBHUB</span>
-          <span>Postmates</span>
-          <span style={{ color: '#F63440', fontWeight: 700 }}><SiDoordash />&nbsp;DoorDash</span>
-          <span style={{ color: '#D70F64' }}><SiFoodpanda />&nbsp;foodpanda</span>
-          <span style={{ color: '#00CCBC', fontWeight: 800 }}><SiDeliveroo />deliveroo</span>
-          <span style={{ color: '#05C167', fontWeight: 700 }}><SiInstacart />&nbsp;instacart</span>
-          <span style={{ color: '#F63440', fontWeight: 700 }}>JUST EAT</span>
-          <span>DiDi Food</span>
-        </div>
       </div>
     </div>
   )

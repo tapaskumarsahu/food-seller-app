@@ -28,7 +28,7 @@ export default function Blog() {
         </article>
         <div className={styles.rightGrid}>
           <article className={styles.card}>
-            <img src={img2} alt="article 1" />
+            <img src={img4} alt="article 1" />
             <div className={styles.cardContent}>
               <span>January 3, 2023</span>
               <h3>How to prepare the perfect french fries in an air fryer</h3>
@@ -44,7 +44,7 @@ export default function Blog() {
           </article>
 
           <article className={styles.card}>
-            <img src={img4} alt="article 3" />
+            <img src={img2} alt="article 3" />
             <div className={styles.cardContent}>
               <span>January 3, 2023</span>
               <h3>7 delicious cheesecake recipes you can prepare</h3>

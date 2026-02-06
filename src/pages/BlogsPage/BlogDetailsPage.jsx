@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './BlogDetailsPage.module.css'
 import ContactNav from '../../components/navbars/ContactNav'
 import Footer from '../../components/footer/Footer'
 import ArticleSection from '../../components/article/ArticleSection'
@@ -12,13 +11,11 @@ export default function BlogDetailsPage() {
     <>
       <ContactNav/>
       <MenuBarExp/>
-      <div className={styles.page}>
+      <div>
       <ArticleSection
         title="The secret tips & tricks to prepare a perfect burger & pizza for our customers"
         image={blogImage1}
       />
-
-      {/* Read more cards */}
       <ReadMore />
     </div>
       <Footer/>

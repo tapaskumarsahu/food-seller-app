@@ -1,5 +1,6 @@
 .blog {
-  padding: 90px 10%;
+  padding: 80px 10%;
+  background: #F9F9F7;
 }
 
 .header {
@@ -66,7 +67,7 @@
 .big img {
   height: 452px;
   object-fit: cover;
-  object-position: var(--img-pos, 0% 0%);
+  object-position: var(--img-pos, 0% 40%);
 }
 
 .imgPosTop { --img-pos: 50% 10%; }

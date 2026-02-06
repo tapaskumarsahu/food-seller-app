@@ -4,19 +4,27 @@
   grid-template-columns: 1.2fr 1fr;
   gap: 60px;
   align-items: center;
+  background: #F9F9F7;
 }
 
 .images {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr .8fr;
   gap: 20px;
+}
+
+.images div:nth-child(3) {
+  border-radius: 18px;
+  background-size: cover;
+  background-position: center;
+  height: 220px;
 }
 
 .images div {
   border-radius: 18px;
   background-size: cover;
   background-position: center;
-  height: 240px;
+  height: 280px;
 }
 
 .images div:first-child {
@@ -66,7 +74,6 @@
   align-items: center;
   justify-content: center;
 }
-
 
 .glyph {
   color: #fff;

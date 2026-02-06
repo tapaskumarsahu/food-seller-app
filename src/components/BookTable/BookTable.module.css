@@ -130,13 +130,11 @@
   display: none;
 }
 
-/* Firefox: treat time input like a text field to avoid native icon */
 .field input[type="time"]::-moz-focus-inner {
   border: 0;
 }
 
 .field select {
-  /* keep select-specific padding and border consistent with inputs */
   padding: 12px 44px 12px 16px;
   border-radius: 24px;
   border: 1px solid #e6e6e3;

@@ -2,7 +2,7 @@
   height: 90vh;
   background: url("../../../assets/home/hero/image.png") center/cover no-repeat;
   background-size: 138%;
-  background-position: -154px -380px;
+  background-position: -154px -394px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,18 +30,18 @@
 
 .actions {
   display: flex;
-  gap: 16px;
+  gap: 18px;
   justify-content: center;
 }
 
 .primaryBtn {
   background: #b23b3b;
   color: white;
-  padding: 12px 26px;
+  padding: 16px 26px;
   border-radius: 30px;
   border: none;
   cursor: pointer;
-  transform: scale(1);           /* normal */
+  transform: scale(1);
   transition: transform 0.4s ease-in-out;
 }
 
@@ -52,12 +52,14 @@
 }
 
 .secondaryBtn {
+  font-weight: 700;
+  color: #2C2F24;
   background: transparent;
   border: 1px solid #2C2F24;
-  padding: 12px 26px;
+  padding: 16px 26px;
   border-radius: 30px;
   cursor: pointer;
-  transform: scale(1);           /* normal */
+  transform: scale(1);
   transition: transform 0.4s ease-in-out;
 }
 
