@@ -114,10 +114,6 @@
   max-width: 240px;
 }
 
-@media (max-width: 1100px) {
-
-}
-
 @media (max-width: 640px) {
   .header h1 { font-size: 36px }
   .filters { flex-wrap: wrap; gap: 10px }

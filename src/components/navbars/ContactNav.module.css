@@ -15,11 +15,13 @@
     gap: 1rem;
     align-items: center;
 }
+
 .item{
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
+
 .socialBtn {
     width: 27.17px;
     height: 27.17px;
@@ -35,6 +37,7 @@
     text-align: center;
     text-decoration: none;
 }
+
 .socialBtn:hover {
     background-color: #F9F9F733;
 }
@@ -165,8 +168,4 @@
     .hidden-mobile {
         display: none;
     }
-}
-
-.socialBtn, .contactItem, .logoLink {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }

@@ -192,12 +192,42 @@
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
   padding: 8px 16px;
   z-index: 100;
-  background-color: rgba(255,255,255,0.72);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 
-@supports not ((-webkit-backdrop-filter: blur(0)) or (backdrop-filter: blur(0))) {
-  .header.scrolled { background-color: rgba(255,255,255,0.94); }
+.header::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms ease;
+}
+
+.header.menu-open::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,var(--overlay-opacity,0.36));
+  z-index: 50;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 220ms ease;
+}
+
+.navbar, .logoImg, .logoText { transition: transform 220ms ease,
+   width 220ms ease,
+   font-size 220ms ease;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: clamp(12px, 2vw, 28px);
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  flex: 1 1 auto;
+  justify-content: center;
+  transition: opacity 260ms cubic-bezier(.2,.8,.2,1), transform 260ms cubic-bezier(.2,.8,.2,1);
 }

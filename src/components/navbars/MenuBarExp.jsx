@@ -18,6 +18,7 @@ export default function MenuBarExp() {
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <nav className={styles.navbar}>
+        {/* Logo */}
         <NavLink to="/" className={styles.logoLink} onClick={() => setOpen(false)}>
           <div className={styles.logo}>
             <span className={styles.logoIcon}>
@@ -27,6 +28,7 @@ export default function MenuBarExp() {
           </div>
         </NavLink>
 
+        {/* Nav Links */}
         <button
           type="button"
           className={styles.menuToggle}
@@ -56,6 +58,7 @@ export default function MenuBarExp() {
           </li>
         </ul>
 
+        {/* CTA Button */}
         <Link to="/book"><button type="button" className={styles.bookBtn}>Book A Table</button></Link>
       </nav>
     </header>

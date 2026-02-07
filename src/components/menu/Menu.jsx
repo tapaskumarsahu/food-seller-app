@@ -32,11 +32,13 @@ export default function Menu() {
       : menuData.filter(item => item.category === active);
   return (
     <div className={styles.menuPage}>
+      {/* Header */}
       <div className={styles.header}>
         <h1>Our Menu</h1>
         <p>We consider all the drivers of change gives you the components <br /> need to change to create a truly happens.</p>
       </div>
 
+      {/* Filter Buttons */}
       <div className={styles.filters}>
         {categories.map(cat => (
           <button
@@ -49,6 +51,7 @@ export default function Menu() {
         ))}
       </div>
 
+      {/* Menu Grid */}
       <div className={styles.grid}>
         {filteredMenu.map(item => (
           <div className={styles.card} key={item.id}>
