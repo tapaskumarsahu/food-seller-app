@@ -67,4 +67,4 @@ Open a PR with a clear title and description. Follow existing code style and kee
 MIT — see LICENSE file (or add one) for full terms.
 
 ---
-If you'd like, I can also run the dev server, lint/format files, or prepare a minimal CONTRIBUTING.md next...
+If you'd like, I can also run the dev server, lint/format files, or prepare a minimal CONTRIBUTING.md next.
